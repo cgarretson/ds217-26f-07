@@ -1,0 +1,40 @@
+{
+  "critique": [
+    {
+      "category": "unsupported claim",
+      "problem": "The title claims that Center-based rehab caused better attendance, but these data do not provide evidence for causation.",
+      "repair": "Use a descriptive title that compares attendance without causal claim."
+    },
+    {
+      "category": "truncated baseline",
+      "problem": "The y-axis starts at 76 instead of 0 which exaggerate the differences in bar heights.",
+      "repair": "Start y-axis at 0 because bar length represents the attendance percentage."
+    },
+    {
+      "category": "missing unit",
+      "problem": "The y-axis is missing the units. It is not obvious by only reading the graph that the y-axis depicts percentages.",
+      "repair": "Label the y-axis appropriately (Sessions Attended (%)). "
+    },
+    {
+      "category": "color-only encoding",
+      "problem": "The graph relies on color to distinguish the programs which may not work for all readers (ie. colorblind individuals) or in grayscale.",
+      "repair": "Give each program both a different color and different pattern."
+    },
+    {
+      "category": "distracting decoration",
+      "problem": "The heavy grid lines and decoration distract from the values.",
+      "repair": "Remove unnecessary decoration and use lighter styling."
+    }
+  ],
+  "question": "How does the percentage of patients meeting the weekly exercise goal differ across follow-up visits for the two programs?",
+  "audience": "The cardiac rehab program coordinator will use the chart to decide where additional follow-up support may be needed.",
+  "intended_claim": "The percentage meeting the exercise goal increases across follow-up visits in both programs (with Center-based higher than Home-based at visit 4).",
+  "y_measure": "Percentage of patients seen at each visit who met the weekly goal of 150 minutes of exercise (%).",
+  "grain": "One row and one point represent one program at one follow-up visit.",
+  "data_types": {
+    "program": "categorical",
+    "visit_number": "ordinal",
+    "goal_met_pct": "quantitative"
+  },
+  "text_alternative": "The chart is a line graph depicting the percentage of patients meeting the exercise goal over the number of follow-up visits among patients the Center-based and Home-based programs. The x-axis shows follow-up visits 1-4, and the y-axis shows the percentage of patients seen at each visit who met the weekly goal of 150 minutes of exercise. The Home-based proportion who meet their goal increases from 58% at visit 1 to 70% at visit 4, while the Center-based proportion increases from 57% to 79%. At visit 4, Center-based is 9% higher than Home-based. Patients chose their program so the chart cannot show if one program caused more exercise. Each percentage also includes only the patients seen at that visit (about 45 per program) so the 9-point gap could reflect chance or differences in participants who returned."
+}
